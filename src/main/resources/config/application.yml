@@ -193,10 +193,11 @@ spring:
         provider:
           oidc:
             issuer-uri: http://localhost:9080/auth/realms/jhipster
+#            issuer-uri: http://192.168.1.90:9080/auth/realms/jhipster
         registration:
           oidc:
-            client-id: internal
-            client-secret: internal
+            client-id: web_app
+            client-secret: web_app
             scope: openid, profile, email, offline_access # last one for refresh tokens
 
 server:
@@ -260,3 +261,23 @@ jhipster:
 # ===================================================================
 
 # application:
+vietinbank:
+  config:
+    model: 2
+    providerId: ALADINTECH
+    version: 1
+    softwareProviderId: softwareProviderId
+    language: vi
+    approver: Aladinpheduyet
+    channel: WEB
+    clientIP: 101.99.6.31
+    appointedApprover: tuanva
+    feeType: OUR
+  headers:
+    x-ibm-client-secret: uS7pQ2cV4yQ4iK7mT2mF6jH0wU3kA7pQ0lX8mF7kX3jO7kC2wV
+    x-ibm-client-id: 9049dbd1-2f74-4df9-a0c6-4acb50bd3f01
+  payment:
+    url: https://api-uat.vietinbank.vn/vtb-api-uat/development/erp/v1/payment/transfer
+  key:
+    aladin-private-key-path: /Users/Macpro/Desktop/KeyStore/privateKey.cer
+    vietinbank-public-key-path: pathmatch

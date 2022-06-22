@@ -1,0 +1,12 @@
+vietinbank:
+  config:
+    model: 2
+    providerId: ALADINTECH
+    version: 1
+    softwareProviderId: softwareProviderId
+    language: vi
+    approver: Aladinpheduyet
+    channel: WEB
+    clientIP: 101.99.6.31
+    appointedApprover: tuanva
+    feeType: OUR
